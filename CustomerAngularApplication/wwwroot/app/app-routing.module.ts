@@ -8,8 +8,8 @@ import { CustomerEditReactiveComponent } from './customers/customer-edit-reactiv
 
 const routes: Routes = [
   { path: 'customers', component: CustomersComponent},
-  //{ path: 'customers/:id', component: CustomerEditComponent},
-  { path: 'customers/:id', component: CustomerEditReactiveComponent },
+  { path: 'customers/:id', component: CustomerEditComponent},
+  //{ path: 'customers/:id', component: CustomerEditReactiveComponent },
   { path: '**', pathMatch:'full', redirectTo: '/customers' } //catch any unfound routes and redirect to home page
 ];
 
